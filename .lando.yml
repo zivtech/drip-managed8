@@ -1,0 +1,4 @@
+name: managed8
+recipe: drupal8
+config:
+  webroot: docroot
