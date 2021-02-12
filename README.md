@@ -9,3 +9,18 @@ This repository is ready to use out of the box in Lando for local development. M
 
 ## Probo Integration
 This repository is ready to be integrated with [Probo.CI](https://probo.ci/) to install a fresh copy of Drupal 8. Additional configuration to the .probo.yaml file is required to manage configuration imports after the site has been installed.
+
+## How to Use This Template
+Below you can find step by step documentation for creating a new Drupal 8 project repository controlled by Composer that lives on GitHub and is hosted on a Managed hosting environment.
+
+1. Create a new GitHub repository for the project site using this repository as a template.
+2. Clone the new repository and rename the project's name value in the .lando.yaml file.
+    name: cooldrupalproject
+3. Start the Lando project.
+    lando start
+4. [Connect Probo.CI](https://docs.probo.ci/) to the new GitHub repository for testing changes in Pull Requests.
+5. Composer require any additional contrib projects and commit the changes to a Feature Branch.
+    lando composer require drupal/webform
+6. Create a Pull Request based on the Feature Branch on GitHub to test the new project site on Probo.CI.
+7. Create a git Tag for code releases when applicable.
+8. Pull the site code down to the desired server(s) as needed.
