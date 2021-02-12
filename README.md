@@ -22,7 +22,7 @@ Below you can find step by step documentation for creating a new Drupal 8 projec
 3. Start the Lando project.
 
         lando start
-4. [Connect Probo.CI](https://docs.probo.ci/) to the new GitHub repository for testing changes in Pull Requests.
+4. [Connect Probo.CI](https://docs.probo.ci/) to the new GitHub repository for testing changes in Pull Requests. *Note:* Requires a database export of the local site install of `export.sql.gz`, or modify the `database:` value in the .probo.yaml file.
 5. Composer require any additional contrib projects and commit the changes to a Feature Branch.
 
         lando composer require drupal/webform
